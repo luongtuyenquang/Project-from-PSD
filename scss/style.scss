@@ -1,1 +1,65 @@
 @import "variables";
+
+html {
+    font-size: 62.5%;
+    color: $color-primary-text;
+    font-family: "Poppins", sans-serif;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+@mixin flexBox($align, $justify, $wrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+.wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.header {
+    @include flexBox(center, space-between, nowrap);
+    padding-top: 4rem;
+    &__menu {
+        font-size: 1.6rem;
+        display: flex;
+        &-item {
+            margin-left: 5rem;
+            font-weight: 500;
+        }
+        &-link--login {
+            padding: 0.7rem 2.5rem;
+            border: 1px solid;
+            border-radius: 3rem;
+        }
+        &-icon {
+            font-size: 1.4rem;
+            padding-left: 1rem;
+        }
+    }
+}
+.logo {
+    font-size: 2.5rem;
+    &__text {
+        color: $color-primary-btn;
+    }
+    &__link {
+        font-weight: 600;
+    }
+}
