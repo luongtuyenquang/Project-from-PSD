@@ -104,10 +104,13 @@ img {
         background-color: $color-primary-btn;
         box-shadow: 0px 10px 35px 0px $color-primary-btn;
     }
+    &--margin {
+        margin-top: 2rem;
+    }
 }
 .category {
     @include flexBox(stretch, space-between, wrap);
-    padding-bottom: 10rem;
+    padding-bottom: 18rem;
     &__item {
         padding: 1.5rem 3rem;
         background-color: white;
@@ -140,5 +143,119 @@ img {
         padding-bottom: 2rem;
         font-weight: 400;
         margin-top: auto;
+    }
+}
+.feature {
+    &:nth-child(odd) {
+        display: flex;
+        align-items: center;
+        line-height: 1.4;
+        padding-bottom: 15rem;
+        flex-direction: row-reverse;
+        .feature__intro {
+            padding-right: 10rem;
+        }
+    }
+    &:nth-child(even) {
+        display: flex;
+        align-items: center;
+        line-height: 1.4;
+        padding-bottom: 15rem;
+        flex-direction: row;
+        .feature__intro {
+            padding-left: 10rem;
+        }
+    }
+    &__img,
+    &__intro {
+        width: 50%;
+    }
+    &__intro {
+        &-title {
+            font-size: 4rem;
+            color: $color-primary-text;
+            font-weight: 600;
+            padding-bottom: 3.5rem;
+        }
+        &-description {
+            font-size: 1.7rem;
+            color: $color-second-text;
+            padding-bottom: 5.5rem;
+            line-height: 1.6;
+            &--size {
+                font-size: 1.5rem;
+            }
+        }
+        &-item {
+            font-size: 1.8rem;
+            font-weight: 600;
+            padding-bottom: 2rem;
+            &--underline {
+                text-decoration: underline;
+            }
+            &--circle {
+                position: relative;
+                padding-left: 4rem;
+                &:nth-child(1)::after {
+                    background-color: #ff6adf;
+                }
+                &:nth-child(2)::after {
+                    background-color: #92fa3c;
+                }
+                &:nth-child(3)::after {
+                    background-color: #1ec0f4;
+                }
+                &:nth-child(4)::after {
+                    background-color: #ff899c;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            &--size {
+                font-size: 1.7rem;
+            }
+        }
+    }
+    &__best {
+        display: flex;
+        flex-direction: column;
+        &-item {
+            width: 50%;
+            &--right {
+                margin-right: 5.5rem;
+            }
+        }
+        &-list {
+            display: flex;
+        }
+        &-icon {
+            font-size: 2rem;
+            padding: 1rem 1.2rem;
+            border-radius: 0.8rem;
+            margin-bottom: 1.7rem;
+            &--blue {
+                color: #61c2ce;
+                background-color: #e4fbfe;
+            }
+            &--orange {
+                color: #f8cc6e;
+                background-color: #fef6e5;
+            }
+            &--purple {
+                color: #bd90e8;
+                background-color: #f9eefc;
+            }
+            &--green {
+                color: #90cd9c;
+                background-color: #ebfbee;
+            }
+        }
     }
 }
