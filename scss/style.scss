@@ -100,8 +100,45 @@ img {
         background-color: transparent;
         margin-right: 2.5rem;
     }
-    &--noBoder-bg {
+    &--noBorder-bg {
         background-color: $color-primary-btn;
         box-shadow: 0px 10px 35px 0px $color-primary-btn;
+    }
+}
+.category {
+    @include flexBox(stretch, space-between, wrap);
+    padding-bottom: 10rem;
+    &__item {
+        padding: 1.5rem 3rem;
+        background-color: white;
+        border-radius: 2rem;
+        width: calc(25% - 2.25rem);
+        display: flex;
+        flex-direction: column;
+        &:nth-child(1) {
+            box-shadow: 0px 20px 35px 0px #ffdfdd;
+        }
+        &:nth-child(2) {
+            box-shadow: 0px 20px 35px 0px #ffdfdd;
+        }
+        &:nth-child(3) {
+            box-shadow: 0px 20px 35px 0px #eef1ff;
+        }
+        &:nth-child(4) {
+            box-shadow: 0px 20px 35px 0px #ffdfdd;
+        }
+    }
+    &__title {
+        font-size: 2.3rem;
+        font-weight: 500;
+        padding-top: 3.5rem;
+        padding-bottom: 3rem;
+    }
+    &__detail {
+        font-size: 1.6rem;
+        color: $color-second-text;
+        padding-bottom: 2rem;
+        font-weight: 400;
+        margin-top: auto;
     }
 }
