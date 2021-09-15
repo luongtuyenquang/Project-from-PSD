@@ -303,3 +303,57 @@ img {
         justify-content: space-between;
     }
 }
+.subscribe {
+    display: flex;
+    padding-bottom: 8.5rem;
+    border-bottom: 4px solid;
+    margin-bottom: 5.5rem;
+    &__title {
+        font-size: 2.5rem;
+        width: 45%;
+        font-weight: 600;
+        padding-right: 13rem;
+        line-height: 1.4;
+    }
+    &__info {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__form {
+        background-color: #efedf5;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 4px;
+        padding-left: 2rem;
+        margin-bottom: 4.5rem;
+        &-input {
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-family: "Poppins", sans-serif;
+            color: $color-second-text;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+        &-btn {
+            padding: 2rem;
+            background-color: transparent;
+            border: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: $color-primary-text;
+        }
+    }
+    &__social {
+        display: flex;
+        padding-left: 2rem;
+        &-icon {
+            padding: 0 2rem;
+            font-size: 2.5rem;
+            color: $color-primary-text;
+        }
+    }
+}
