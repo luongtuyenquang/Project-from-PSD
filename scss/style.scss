@@ -278,3 +278,28 @@ img {
         justify-content: space-between;
     }
 }
+.themeselve {
+    display: flex;
+    flex-direction: column;
+    padding-top: 19rem;
+    padding-bottom: 18rem;
+    &__title {
+        font-size: 3.8rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    &__notice {
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: 600;
+        padding-top: 3rem;
+        padding-bottom: 6rem;
+        &--color {
+            color: $color-primary-btn;
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
