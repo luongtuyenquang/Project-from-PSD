@@ -14,31 +14,46 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
     <div class="wrapper">
+        <div class="container-fluid">
+            <div class="container">
+                <header class="header">
+                    <div class="logo">
+                        <a href="#1" class="logo__link"><span class="logo__text">Play</span>ground</a>
+                    </div>
+                    <ul class="header__menu">
+                        <li class="header__menu-item">
+                            <a href="#1" class="header__menu-link">Events
+                            <i class="fas fa-chevron-down header__menu-icon"></i>
+                            </a>
+                            <ul class="header__dropdown">
+                                <li class="header__dropdown-item">
+                                    <a href="#1" class="header__dropdown-link">Events for Kids</a>
+                                </li>
+                                <li class="header__dropdown-item">
+                                    <a href="#1" class="header__dropdown-link">Events for Parents</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#1" class="header__menu-link">Pricing</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#1" class="header__menu-link">Blog</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#1" class="header__menu-link header__menu-link--login">Login</a>
+                        </li>
+                    </ul>
+                    <i class="fas fa-bars icon-open"></i>
+                    <i class="fas fa-times icon-close"></i>
+                </header>
+            </div>
+        </div>
         <div class="container">
-            <header class="header">
-                <div class="logo">
-                    <a href="#1" class="logo__link"><span class="logo__text">Play</span>ground</a>
-                </div>
-                <ul class="header__menu">
-                    <li class="header__menu-item">
-                        <a href="#1" class="header__menu-link">Events
-                        <i class="fas fa-chevron-down header__menu-icon"></i>
-                        </a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="#1" class="header__menu-link">Pricing</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="#1" class="header__menu-link">Blog</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="#1" class="header__menu-link header__menu-link--login">Login</a>
-                    </li>
-                </ul>
-            </header>
             <section class="banner">
                 <h1 class="banner__heading">
                     The Kids playground
@@ -258,5 +273,6 @@
             </footer>
         </div>
     </div>
+    <script src="./js/app.js"></script>
 </body>
 </html>

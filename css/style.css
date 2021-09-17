@@ -21,7 +21,7 @@ img {
 }
 
 .wrap {
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -29,13 +29,41 @@ img {
   max-width: 1170px;
   margin: 0 auto;
 }
+.container-fluid {
+  width: 100%;
+  height: 8.5rem;
+  background-color: #afb0b3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding-top: 4rem;
+  width: 1170px;
+  height: 8.5rem;
+}
+.header .icon-close {
+  display: none;
+}
+.header.playing .icon-open {
+  display: none;
+}
+.header.playing .icon-close {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+}
+.header__dropdown {
+  position: absolute;
+  left: 0;
+  top: 2.3rem;
+  width: 20rem;
+  display: none;
 }
 .header__menu {
   font-size: 1.6rem;
@@ -44,6 +72,10 @@ img {
 .header__menu-item {
   margin-left: 5rem;
   font-weight: 600;
+  position: relative;
+}
+.header__menu-item:hover .header__dropdown {
+  display: block;
 }
 .header__menu-link--login {
   padding: 0.7rem 2.5rem;
@@ -53,6 +85,16 @@ img {
 .header__menu-icon {
   font-size: 1.4rem;
   padding-left: 1rem;
+}
+
+.icon-open,
+.icon-close {
+  display: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  font-size: 2rem;
 }
 
 .logo__text {
@@ -68,7 +110,7 @@ img {
   padding-top: 14.5rem;
   padding-bottom: 14.5rem;
   max-width: 71.5rem;
-  margin: 0 auto;
+  margin: 8.5rem auto 0;
   text-align: center;
 }
 .banner__heading {

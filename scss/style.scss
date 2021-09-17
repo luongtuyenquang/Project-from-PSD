@@ -27,22 +27,59 @@ img {
 }
 
 .wrap {
-    max-width: 1440px;
+    max-width: 100%;
     margin: 0 auto;
 }
 .container {
     max-width: 1170px;
     margin: 0 auto;
+    &-fluid {
+        width: 100%;
+        height: $header-high;
+        background-color: #afb0b3;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
 }
+
 .header {
     @include flexBox(center, space-between, nowrap);
-    padding-top: 4rem;
+    width: 1170px;
+    height: $header-high;
+    & .icon-close {
+        display: none;
+    }
+    &.playing .icon-open {
+        display: none;
+    }
+    &.playing .icon-close {
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+    }
+    &__dropdown {
+        position: absolute;
+        left: 0;
+        top: 2.3rem;
+        width: 20rem;
+        display: none;
+    }
+    &__dropdown-item {
+    }
+    &__dropdown-link {
+    }
     &__menu {
         font-size: 1.6rem;
         display: flex;
         &-item {
             margin-left: 5rem;
             font-weight: 600;
+            position: relative;
+            &:hover .header__dropdown {
+                display: block;
+            }
         }
         &-link--login {
             padding: 0.7rem 2.5rem;
@@ -55,6 +92,16 @@ img {
         }
     }
 }
+.icon-open,
+.icon-close {
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    font-size: 2rem;
+}
+
 .logo {
     &__text {
         color: $color-primary-btn;
@@ -69,7 +116,7 @@ img {
     padding-top: 14.5rem;
     padding-bottom: 14.5rem;
     max-width: 71.5rem;
-    margin: 0 auto;
+    margin: $header-high auto 0;
     text-align: center;
     &__heading {
         font-size: 6rem;
