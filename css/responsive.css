@@ -3,8 +3,156 @@
 /* Từ 1024px tới 1439px */
 /* Từ 800px tới 1023px */
 @media only screen and (min-width: 800px) and (max-width: 1023px) {
-  .wrapper {
-    overflow: hidden;
+  .container-fluid {
+    height: 6rem;
+  }
+
+  .header {
+    height: 6rem;
+    width: unset;
+    padding-right: 2rem;
+  }
+
+  .logo {
+    padding-left: 2rem;
+  }
+  .logo__link {
+    font-size: 2rem;
+    width: unset;
+  }
+  .logo--center {
+    text-align: center;
+  }
+
+  .banner {
+    margin-top: 0;
+    padding-top: 11.5rem;
+    padding-bottom: 3.5rem;
+  }
+  .banner__heading {
+    line-height: 1.4;
+    font-size: 5.5rem;
+  }
+  .banner__btns {
+    padding-bottom: 4rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .category {
+    padding: 0 2rem 10rem;
+  }
+  .category__item {
+    width: 28%;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .category__title {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  .category__detail {
+    padding-bottom: 0;
+    font-size: 1.4rem;
+  }
+
+  .feature:nth-child(odd), .feature:nth-child(even) {
+    padding: 0 2rem 9rem;
+  }
+  .feature:nth-child(odd) .feature__intro, .feature:nth-child(even) .feature__intro {
+    padding-left: 2.3rem;
+    padding-right: 0rem;
+  }
+  .feature__img {
+    width: 50%;
+  }
+  .feature__intro {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .feature__intro-description {
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
+  }
+  .feature__intro-title {
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .feature__intro-item {
+    font-size: 1.5rem;
+  }
+  .feature__best-item {
+    padding: 0 1rem;
+  }
+  .feature__best-item--right {
+    margin-right: 0;
+  }
+
+  .partner {
+    padding: 0 2rem;
+  }
+  .partner__title {
+    font-size: 2.8rem;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+  }
+  .partner__logo-item {
+    padding: 1.5rem 0;
+  }
+
+  .themeselve {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .themeselve__title {
+    font-size: 3rem;
+    line-height: 1.4;
+  }
+  .themeselve__notice {
+    font-size: 2rem;
+  }
+  .themeselve__list {
+    flex-wrap: wrap;
+    padding: 0 2rem;
+  }
+  .themeselve__item {
+    max-width: 28%;
+    padding-bottom: 3rem;
+  }
+
+  .subscribe {
+    padding: 0 2rem 3.5rem;
+  }
+  .subscribe__title {
+    margin: 0 auto 2rem;
+    width: 45%;
+    padding-right: 2rem;
+    font-size: 2rem;
+  }
+  .subscribe__social {
+    padding-left: 0;
+    margin: 0 auto;
+  }
+  .subscribe__social-icon {
+    font-size: 2rem;
+  }
+  .subscribe__form-input, .subscribe__form-btn {
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    padding-bottom: 2rem;
+  }
+  .footer__list {
+    width: 25%;
+  }
+  .footer__link {
+    font-size: 1.5rem;
   }
 }
 /* Tablet --Từ 550px tới 799px--*/
@@ -21,6 +169,7 @@
     height: 5rem;
   }
   .header__menu {
+    font-size: 1.3rem;
     position: absolute;
     right: 0;
     top: 5rem;
@@ -28,7 +177,7 @@
     background-color: #0b183c;
     display: flex;
     flex-direction: column;
-    width: 58%;
+    width: 50%;
     justify-content: space-evenly;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
@@ -36,22 +185,176 @@
   .header__menu-link {
     color: white;
   }
+  .header__menu-link--login {
+    padding: 0;
+    border: 0;
+    border-radius: unset;
+  }
 
   .icon-open {
     display: block;
   }
 
+  .logo {
+    padding-left: 2rem;
+  }
   .logo__link {
     font-size: 2rem;
-    padding-left: 2rem;
+    width: unset;
   }
   .logo--center {
     text-align: center;
-    width: 90%;
+    width: 100%;
+    padding-bottom: 4rem;
   }
 
   .nav-active {
     transform: translateX(0%);
+  }
+
+  .banner {
+    margin-top: 0;
+    padding-top: 11.5rem;
+    padding-bottom: 3.5rem;
+  }
+  .banner__heading {
+    line-height: 1.4;
+    font-size: 5.5rem;
+  }
+  .banner__btns {
+    padding-bottom: 4rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .btn-full {
+    width: 100%;
+  }
+
+  .category {
+    flex-direction: row;
+    padding-bottom: 10rem;
+  }
+  .category__item {
+    width: 38%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .category__title {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  .category__detail {
+    padding-bottom: 0;
+    font-size: 1.4rem;
+  }
+
+  .feature:nth-child(odd), .feature:nth-child(even) {
+    padding: 0 2rem 9rem;
+  }
+  .feature:nth-child(odd) .feature__intro, .feature:nth-child(even) .feature__intro {
+    padding-left: 2rem;
+    padding-right: 0rem;
+  }
+  .feature__img {
+    width: 45%;
+  }
+  .feature__intro {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .feature__intro-description {
+    padding-bottom: 3rem;
+    font-size: 1.3rem;
+  }
+  .feature__intro-title {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .feature__intro-item {
+    font-size: 1.3rem;
+  }
+  .feature__best-item {
+    padding: 0 1rem;
+  }
+  .feature__best-item--right {
+    margin-right: 0;
+  }
+
+  .partner {
+    padding-top: 0;
+  }
+  .partner__title {
+    font-size: 2.8rem;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+  }
+  .partner__logo {
+    justify-content: space-around;
+  }
+  .partner__logo-item {
+    padding: 1.5rem 0;
+  }
+
+  .themeselve {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .themeselve__title {
+    font-size: 3rem;
+    line-height: 1.4;
+  }
+  .themeselve__notice {
+    font-size: 2rem;
+  }
+  .themeselve__list {
+    flex-wrap: wrap;
+  }
+  .themeselve__item {
+    max-width: 36%;
+    margin: 0 auto 3rem;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    padding-bottom: 3.5rem;
+  }
+  .subscribe__title {
+    margin: 0 auto 2rem;
+    width: 90%;
+    padding-right: 0;
+    text-align: center;
+  }
+  .subscribe__info {
+    width: 90%;
+    margin: 0 auto 3rem;
+  }
+  .subscribe__social {
+    padding-left: 0;
+    margin: 0 auto;
+  }
+  .subscribe__social-icon {
+    font-size: 2rem;
+  }
+  .subscribe__form-input, .subscribe__form-btn {
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    padding-bottom: 2rem;
+  }
+  .footer__list {
+    width: 100%;
+    text-align: center;
+  }
+  .footer__link {
+    font-size: 1.5rem;
   }
 }
 /* Mobile-large --Từ 320px tới 554px--*/
@@ -94,6 +397,9 @@
     display: block;
   }
 
+  .logo {
+    padding-left: 2rem;
+  }
   .logo__link {
     font-size: 2rem;
     width: unset;

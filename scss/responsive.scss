@@ -9,8 +9,156 @@
 
 /* Từ 800px tới 1023px */
 @media only screen and (min-width: 800px) and (max-width: 1023px) {
-    .wrapper {
-        overflow: hidden;
+    .container-fluid {
+        height: $header-heigh-laptop-small;
+    }
+    .header {
+        height: $header-heigh-laptop-small;
+        width: unset;
+        padding-right: 2rem;
+    }
+    .logo {
+        padding-left: 2rem;
+        &__link {
+            font-size: 2rem;
+            width: unset;
+        }
+        &--center {
+            text-align: center;
+        }
+    }
+    .banner {
+        margin-top: 0;
+        padding-top: 11.5rem;
+        padding-bottom: 3.5rem;
+        &__heading {
+            line-height: 1.4;
+            font-size: 5.5rem;
+        }
+        &__btns {
+            padding-bottom: 4rem;
+        }
+    }
+    .btn {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .category {
+        padding: 0 2rem 10rem;
+        &__item {
+            width: 28%;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        &__title {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+        &__detail {
+            padding-bottom: 0;
+            font-size: 1.4rem;
+        }
+    }
+    .feature {
+        &:nth-child(odd),
+        &:nth-child(even) {
+            padding: 0 2rem 9rem;
+            .feature__intro {
+                padding-left: 2.3rem;
+                padding-right: 0rem;
+            }
+        }
+        &__img {
+            width: 50%;
+        }
+        &__intro {
+            width: 50%;
+            margin: 0 auto;
+            &-description {
+                padding-bottom: 3rem;
+                font-size: 1.5rem;
+            }
+            &-title {
+                font-size: 2rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            &-item {
+                font-size: 1.5rem;
+            }
+        }
+        &__best {
+            &-item {
+                padding: 0 1rem;
+                &--right {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .partner {
+        padding: 0 2rem;
+        &__title {
+            font-size: 2.8rem;
+            padding-bottom: 4rem;
+            margin-bottom: 4rem;
+        }
+        &__logo {
+            &-item {
+                padding: 1.5rem 0;
+            }
+        }
+    }
+    .themeselve {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        &__title {
+            font-size: 3rem;
+            line-height: 1.4;
+        }
+        &__notice {
+            font-size: 2rem;
+        }
+        &__list {
+            flex-wrap: wrap;
+            padding: 0 2rem;
+        }
+        &__item {
+            max-width: 28%;
+            padding-bottom: 3rem;
+        }
+    }
+    .subscribe {
+        padding: 0 2rem 3.5rem;
+        &__title {
+            margin: 0 auto 2rem;
+            width: 45%;
+            padding-right: 2rem;
+            font-size: 2rem;
+        }
+        &__social {
+            padding-left: 0;
+            margin: 0 auto;
+            &-icon {
+                font-size: 2rem;
+            }
+        }
+        &__form {
+            &-input,
+            &-btn {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .footer {
+        padding-bottom: 2rem;
+        &__list {
+            width: 25%;
+        }
+        &__link {
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -25,6 +173,7 @@
     .header {
         height: $header-heigh-mobile;
         &__menu {
+            font-size: 1.3rem;
             position: absolute;
             right: 0;
             top: $header-heigh-mobile;
@@ -32,12 +181,17 @@
             background-color: #0b183c;
             display: flex;
             flex-direction: column;
-            width: 58%;
+            width: 50%;
             justify-content: space-evenly;
             transform: translateX(100%);
             transition: transform 0.5s ease-in;
             &-link {
                 color: white;
+                &--login {
+                    padding: 0;
+                    border: 0;
+                    border-radius: unset;
+                }
             }
         }
     }
@@ -45,17 +199,164 @@
         display: block;
     }
     .logo {
+        padding-left: 2rem;
         &__link {
             font-size: 2rem;
-            padding-left: 2rem;
+            width: unset;
         }
         &--center {
             text-align: center;
-            width: 90%;
+            width: 100%;
+            padding-bottom: 4rem;
         }
     }
     .nav-active {
         transform: translateX(0%);
+    }
+    .banner {
+        margin-top: 0;
+        padding-top: 11.5rem;
+        padding-bottom: 3.5rem;
+        &__heading {
+            line-height: 1.4;
+            font-size: 5.5rem;
+        }
+        &__btns {
+            padding-bottom: 4rem;
+        }
+    }
+    .btn {
+        font-size: 1.4rem;
+        text-align: center;
+        &-full {
+            width: 100%;
+        }
+    }
+    .category {
+        flex-direction: row;
+        padding-bottom: 10rem;
+        &__item {
+            width: 38%;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        &__title {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+        &__detail {
+            padding-bottom: 0;
+            font-size: 1.4rem;
+        }
+    }
+    .feature {
+        &:nth-child(odd),
+        &:nth-child(even) {
+            padding: 0 2rem 9rem;
+            .feature__intro {
+                padding-left: 2rem;
+                padding-right: 0rem;
+            }
+        }
+        &__img {
+            width: 45%;
+        }
+        &__intro {
+            width: 90%;
+            margin: 0 auto;
+            &-description {
+                padding-bottom: 3rem;
+                font-size: 1.3rem;
+            }
+            &-title {
+                font-size: 2rem;
+                text-align: center;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            &-item {
+                font-size: 1.3rem;
+            }
+        }
+        &__best {
+            &-item {
+                padding: 0 1rem;
+                &--right {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .partner {
+        padding-top: 0;
+        &__title {
+            font-size: 2.8rem;
+            padding-bottom: 4rem;
+            margin-bottom: 4rem;
+        }
+        &__logo {
+            justify-content: space-around;
+            &-item {
+                padding: 1.5rem 0;
+            }
+        }
+    }
+    .themeselve {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        &__title {
+            font-size: 3rem;
+            line-height: 1.4;
+        }
+        &__notice {
+            font-size: 2rem;
+        }
+        &__list {
+            flex-wrap: wrap;
+        }
+        &__item {
+            max-width: 36%;
+            margin: 0 auto 3rem;
+        }
+    }
+    .subscribe {
+        flex-direction: column;
+        padding-bottom: 3.5rem;
+        &__title {
+            margin: 0 auto 2rem;
+            width: 90%;
+            padding-right: 0;
+            text-align: center;
+        }
+        &__info {
+            width: 90%;
+            margin: 0 auto 3rem;
+        }
+        &__social {
+            padding-left: 0;
+            margin: 0 auto;
+            &-icon {
+                font-size: 2rem;
+            }
+        }
+        &__form {
+            &-input,
+            &-btn {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .footer {
+        padding-bottom: 2rem;
+        &__list {
+            width: 100%;
+            text-align: center;
+        }
+        &__link {
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -96,6 +397,7 @@
         display: block;
     }
     .logo {
+        padding-left: 2rem;
         &__link {
             font-size: 2rem;
             width: unset;
