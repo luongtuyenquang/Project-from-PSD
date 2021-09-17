@@ -195,7 +195,7 @@ img {
     }
 }
 .feature {
-    &:nth-child(odd) {
+    &:nth-child(even) {
         display: flex;
         align-items: center;
         line-height: 1.4;
@@ -205,7 +205,7 @@ img {
             padding-right: 10rem;
         }
     }
-    &:nth-child(even) {
+    &:nth-child(odd) {
         display: flex;
         align-items: center;
         line-height: 1.4;
