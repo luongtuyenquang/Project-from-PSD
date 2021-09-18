@@ -29,5 +29,25 @@ function navMobile() {
     iconOpen.addEventListener('click', stopEvent) 
     navList.addEventListener('click', stopEvent)
     header.addEventListener('click', stopEvent)
+
+    function headerScroll(){
+        const header = document.querySelector('.container-fluid')
+        window.addEventListener('scroll', function(){
+            header.classList.toggle('header_scroll', window.scrollY > 0)
+        })
+    }
+    function backTop(){
+        const backTop = document.querySelector('.back-top')
+        window.addEventListener('scroll', function(){
+            backTop.style.display = 'block'
+            backTop.classList.toggle('back-top', window.scrollY > 500)
+        })
+        backTop.addEventListener('click', function(){
+            // event.preventDefault();
+            $('html,body').animate({scrollTop:0}, "slow");
+        })
+    }
+    headerScroll()
+    backTop()
 }
 navMobile();

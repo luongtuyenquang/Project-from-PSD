@@ -154,6 +154,10 @@
   .footer__link {
     font-size: 1.5rem;
   }
+
+  .back-top-icon {
+    padding: 1.3rem;
+  }
 }
 /* Tablet --Từ 550px tới 799px--*/
 @media only screen and (min-width: 550px) and (max-width: 799px) {
@@ -356,6 +360,10 @@
   .footer__link {
     font-size: 1.5rem;
   }
+
+  .back-top-icon {
+    padding: 1.3rem;
+  }
 }
 /* Mobile-large --Từ 320px tới 554px--*/
 @media only screen and (min-width: 320px) and (max-width: 554px) {
@@ -551,6 +559,10 @@
   }
   .footer__link {
     font-size: 1.5rem;
+  }
+
+  .back-top-icon {
+    padding: 1.3rem;
   }
 }
 

@@ -160,6 +160,11 @@
             font-size: 1.5rem;
         }
     }
+    .back-top {
+        &-icon {
+            padding: 1.3rem;
+        }
+    }
 }
 
 /* Tablet --Từ 550px tới 799px--*/
@@ -358,6 +363,11 @@
             font-size: 1.5rem;
         }
     }
+    .back-top {
+        &-icon {
+            padding: 1.3rem;
+        }
+    }
 }
 
 /* Mobile-large --Từ 320px tới 554px--*/
@@ -548,6 +558,11 @@
         }
         &__link {
             font-size: 1.5rem;
+        }
+    }
+    .back-top {
+        &-icon {
+            padding: 1.3rem;
         }
     }
 }
