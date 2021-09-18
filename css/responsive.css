@@ -1,6 +1,65 @@
 @charset "UTF-8";
 /* PC-large --Từ 1440px trở lên--*/
 /* Từ 1024px tới 1439px */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .header {
+    width: unset;
+    padding-right: 2rem;
+  }
+
+  .logo {
+    padding-left: 2rem;
+  }
+
+  .category {
+    padding: 0 2rem 10rem;
+  }
+
+  .feature:nth-child(odd), .feature:nth-child(even) {
+    padding: 0 2rem 9rem;
+  }
+  .feature:nth-child(odd) .feature__intro, .feature:nth-child(even) .feature__intro {
+    padding-left: 5rem;
+  }
+  .feature__intro-description {
+    padding-bottom: 3rem;
+  }
+  .feature__intro-title {
+    font-size: 3.5rem;
+  }
+
+  .partner {
+    padding: 0 2rem;
+  }
+
+  .themeselve__title {
+    font-size: 3.5rem;
+  }
+  .themeselve__list {
+    padding: 0 2rem;
+  }
+  .themeselve__item {
+    width: calc(25% - 2.25rem);
+  }
+
+  .subscribe {
+    padding: 0 2rem 3.5rem;
+  }
+  .subscribe__title {
+    padding-right: 2rem;
+  }
+  .subscribe__social {
+    margin: 0 auto;
+  }
+
+  .footer {
+    padding-bottom: 2rem;
+  }
+
+  .back-top-icon {
+    padding: 1.3rem;
+  }
+}
 /* Từ 800px tới 1023px */
 @media only screen and (min-width: 800px) and (max-width: 1023px) {
   .container-fluid {

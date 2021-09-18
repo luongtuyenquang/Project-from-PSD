@@ -5,6 +5,64 @@
 
 /* Từ 1024px tới 1439px */
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .header {
+        width: unset;
+        padding-right: 2rem;
+    }
+    .logo {
+        padding-left: 2rem;
+    }
+    .category {
+        padding: 0 2rem 10rem;
+    }
+    .feature {
+        &:nth-child(odd),
+        &:nth-child(even) {
+            padding: 0 2rem 9rem;
+            .feature__intro {
+                padding-left: 5rem;
+            }
+        }
+        &__intro {
+            &-description {
+                padding-bottom: 3rem;
+            }
+            &-title {
+                font-size: 3.5rem;
+            }
+        }
+    }
+    .partner {
+        padding: 0 2rem;
+    }
+    .themeselve {
+        &__title {
+            font-size: 3.5rem;
+        }
+        &__list {
+            padding: 0 2rem;
+        }
+        &__item {
+            width: calc(25% - 2.25rem);
+        }
+    }
+    .subscribe {
+        padding: 0 2rem 3.5rem;
+        &__title {
+            padding-right: 2rem;
+        }
+        &__social {
+            margin: 0 auto;
+        }
+    }
+    .footer {
+        padding-bottom: 2rem;
+    }
+    .back-top {
+        &-icon {
+            padding: 1.3rem;
+        }
+    }
 }
 
 /* Từ 800px tới 1023px */

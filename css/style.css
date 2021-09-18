@@ -401,7 +401,7 @@ img {
 }
 .subscribe__social {
   display: flex;
-  padding-left: 2rem;
+  margin: 0 auto;
 }
 .subscribe__social-icon {
   padding: 0 2rem;
