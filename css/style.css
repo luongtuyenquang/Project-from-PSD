@@ -277,14 +277,16 @@ img {
 .feature__intro-item {
   font-size: 1.8rem;
   font-weight: 600;
-  padding-bottom: 2rem;
 }
 .feature__intro-item--underline {
   text-decoration: underline;
+  padding-bottom: 2rem;
 }
 .feature__intro-item--circle {
   position: relative;
   padding-left: 4rem;
+  line-height: 4.2rem;
+  margin-bottom: 1rem;
 }
 .feature__intro-item--circle:nth-child(1)::after {
   background-color: #ff6adf;
@@ -304,8 +306,9 @@ img {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  top: 0;
+  top: 50%;
   left: 0;
+  transform: translateY(-50%);
 }
 .feature__intro-item--size {
   font-size: 1.7rem;
