@@ -272,6 +272,10 @@
   .header__menu-link--login:hover {
     color: black;
   }
+  .header__menu-link--line::after {
+    content: "";
+    height: unset;
+  }
 
   .icon-open {
     display: block;
@@ -496,6 +500,10 @@
   }
   .header__menu-link--login:hover {
     color: black;
+  }
+  .header__menu-link--line::after {
+    content: "";
+    height: unset;
   }
 
   .icon-open {

@@ -274,6 +274,12 @@
                         color: black;
                     }
                 }
+                &--line {
+                    &::after {
+                        content: "";
+                        height: unset;
+                    }
+                }
             }
         }
     }
@@ -494,6 +500,12 @@
                     border-radius: unset;
                     &:hover {
                         color: black;
+                    }
+                }
+                &--line {
+                    &::after {
+                        content: "";
+                        height: unset;
                     }
                 }
             }

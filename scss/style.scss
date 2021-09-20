@@ -70,10 +70,6 @@ img {
         width: 20rem;
         display: none;
     }
-    &__dropdown-item {
-    }
-    &__dropdown-link {
-    }
     &__menu {
         font-size: 1.6rem;
         display: flex;
@@ -85,13 +81,34 @@ img {
                 display: block;
             }
         }
-        &-link--login {
-            padding: 0.7rem 2.5rem;
-            border: 1px solid;
-            border-radius: 3rem;
-            &:hover {
-                background-color: $color-primary-text;
-                color: white;
+        &-link {
+            -webkit-tap-highlight-color: transparent;
+            &--line {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -5px;
+                    right: 0;
+                    height: 3px;
+                    transition: transform 0.15s linear;
+                    transform: scale(0.2);
+                }
+                &:hover::after {
+                    background-color: $color-primary-text;
+                    width: 100%;
+                    transform: scale(1);
+                }
+            }
+
+            &--login {
+                padding: 0.7rem 2.5rem;
+                border: 1px solid;
+                border-radius: 3rem;
+                &:hover {
+                    background-color: $color-primary-text;
+                    color: white;
+                }
             }
         }
         &-icon {
@@ -152,6 +169,7 @@ img {
     display: inline-block;
     border-radius: 3rem;
     border: 0;
+    -webkit-tap-highlight-color: transparent;
     &--border-noBg {
         border: 1px solid;
         background-color: transparent;
@@ -194,6 +212,7 @@ img {
         flex-direction: column;
         cursor: pointer;
         transition: box-shadow 0.3s linear;
+        -webkit-tap-highlight-color: transparent;
         &:hover .category__img {
             transform: scale(1.1);
         }
@@ -359,6 +378,7 @@ img {
     display: flex;
     flex-direction: column;
     padding-top: 4rem;
+    -webkit-tap-highlight-color: transparent;
     &__title {
         font-size: 3.3rem;
         text-align: center;
@@ -444,10 +464,23 @@ img {
     &__social {
         display: flex;
         margin: 0 auto;
+        -webkit-tap-highlight-color: transparent;
         &-icon {
             padding: 0 2rem;
             font-size: 2.5rem;
             color: $color-primary-text;
+        }
+        &-link {
+            border-radius: 50%;
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 1rem;
+            &:hover {
+                background-color: #c3b9b9;
+            }
         }
     }
 }
@@ -459,6 +492,7 @@ img {
         display: flex;
         flex-direction: column;
         width: 25%;
+        -webkit-tap-highlight-color: transparent;
     }
     &__link {
         font-size: 1.7rem;
@@ -480,6 +514,7 @@ img {
     font-size: 2rem;
     color: white;
     display: none;
+    -webkit-tap-highlight-color: transparent;
     &-icon {
         padding: 1.7rem;
         border-radius: 50%;
